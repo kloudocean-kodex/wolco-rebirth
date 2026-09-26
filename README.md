@@ -16,6 +16,14 @@ This branch turns Wolco's actual builder journey into the interaction language: 
 - Lenis smooth scroll
 - Bespoke CSS art direction (no component-template framework)
 
+## Instant browser preview
+
+Open the working branch directly in StackBlitz:
+
+https://stackblitz.com/github/kloudocean-kodex/wolco-rebirth/tree/feat/redline-rebirth?startScript=dev
+
+The repository remains the source of truth; refreshing the StackBlitz import picks up branch changes.
+
 ## Run
 
 ```bash
