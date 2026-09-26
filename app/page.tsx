@@ -6,9 +6,11 @@ import { ProjectArchive } from "@/components/ProjectArchive";
 import { KnockdownRebuild } from "@/components/KnockdownRebuild";
 import { BuildMap } from "@/components/BuildMap";
 import { StartConversation } from "@/components/StartConversation";
+import { ProofStrip } from "@/components/ProofStrip";
+import { JsonLd } from "@/components/JsonLd";
 
 export default function Home(){
-  return <main id="main">
+  return <main id="main"><JsonLd />
     <RedlineHero />
     <section className="manifesto section-pad surface-ivory" aria-labelledby="manifesto-title">
       <div className="eyebrow row-between"><span>WOLCO / MELBOURNE</span><span>DESIGN · BUILD · LIVE</span></div>
@@ -21,6 +23,6 @@ export default function Home(){
         </div>
       </div>
     </section>
-    <HomeDesigns /><WowStudio /><BuildJourney /><ProjectArchive /><KnockdownRebuild /><BuildMap /><StartConversation />
+    <ProofStrip /><HomeDesigns /><WowStudio /><BuildJourney /><ProjectArchive /><KnockdownRebuild /><BuildMap /><StartConversation />
   </main>;
 }
