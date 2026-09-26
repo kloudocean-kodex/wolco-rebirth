@@ -24,7 +24,7 @@ export function BuildJourney(){
     <div className="journey-title">
       <div className="eyebrow">04 / THE BUILD JOURNEY</div>
       <h2 className="display-xl">Process,<br/><em>made visible.</em></h2>
-      <p className="journey-note">A cinematic treatment of Wolco's real customer journey — not an invented agency funnel.</p>
+      <p className="journey-note">A cinematic treatment of Wolco&apos;s real customer journey — not an invented agency funnel.</p>
     </div>
     <div className="journey-body"><div className="journey-rail"><div className="journey-progress"/></div>{steps.map(([n,t,c])=><article className="journey-step" key={n}><span className="journey-num">{n}</span><h3>{t}</h3><p>{c}</p></article>)}</div>
   </section>;
