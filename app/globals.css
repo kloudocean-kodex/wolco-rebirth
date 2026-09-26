@@ -141,4 +141,35 @@ a{color:inherit;text-decoration:none}button,input,select{font:inherit}::selectio
   .proof-num{margin-bottom:38px}
 }
 
+
+/* Persistent REDLINE */
+.redline-progress{position:fixed;left:0;top:0;width:2px;height:100svh;z-index:120;background:rgba(201,15,24,.16);pointer-events:none}
+.redline-progress span{display:block;width:100%;height:100%;background:var(--red);transform-origin:top center;will-change:transform}
+
+/* Home collection copy */
+.design-copy{position:absolute;z-index:3;left:var(--pad);bottom:15vh;max-width:min(760px,72vw)}
+.design-copy h3{position:static;margin:0;font-family:var(--font-display);font-weight:500;font-size:clamp(68px,9.5vw,160px);line-height:.8;letter-spacing:-.055em}
+.design-copy p{max-width:520px;margin:24px 0 0;color:#d0cdc6;font-size:clamp(15px,1.2vw,19px);line-height:1.55}
+.design-panel>h3{display:none}
+
+/* Cinematic red interlude */
+.cinematic-break{position:relative;min-height:105svh;background:#0b0b0b;color:#fff;overflow:hidden;display:grid;place-items:center;padding:120px var(--pad)}
+.cinema-red{position:absolute;inset:0;background:var(--red);transform:scaleX(0);transform-origin:left center;will-change:transform}
+.cinema-copy{position:relative;z-index:2;width:100%;display:grid;grid-template-columns:.35fr 1.65fr;gap:7vw;align-items:end}
+.cinema-copy>.eyebrow{align-self:start;padding-top:10px}
+.cinema-word{margin:0;font-family:var(--font-sans);font-size:clamp(76px,13.5vw,220px);font-weight:800;letter-spacing:-.075em;line-height:.72;display:flex;flex-direction:column;overflow:hidden}
+.cinema-word span{display:block}
+.cinema-copy p{grid-column:2;max-width:760px;margin:40px 0 0;font-family:var(--font-display);font-size:clamp(25px,3vw,46px);line-height:1.08;letter-spacing:-.025em}
+
+@media(max-width:899px){
+  .redline-progress{width:1px}
+  .design-copy{bottom:17vh;max-width:78vw}
+  .design-copy h3{font-size:clamp(58px,15vw,92px)}
+  .design-copy p{font-size:14px;line-height:1.5;margin-top:16px}
+  .cinematic-break{min-height:90svh;padding-top:100px;padding-bottom:100px}
+  .cinema-copy{grid-template-columns:1fr;gap:44px}
+  .cinema-word{font-size:clamp(72px,23vw,120px);line-height:.76}
+  .cinema-copy p{grid-column:1;margin-top:6px;font-size:clamp(24px,7vw,36px)}
+}
+
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.001ms!important}}
