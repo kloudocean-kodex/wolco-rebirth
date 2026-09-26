@@ -24,3 +24,12 @@ Public business listings also place Wolco at **9/28 Longford Road, Epping, Victo
 ## Production rule
 
 Before launch, verify every business fact against Wolco-controlled current sources or direct client confirmation. Do not promote temporary stock imagery, prototype project names, or placeholder service claims as finished Wolco content.
+
+
+## Verified September 2026 public project updates
+
+Public Wolco social/business posts indexed in September 2026 confirm:
+- **16 Sep 2026 — Wollert:** slab stage / foundation milestone.
+- **01 Sep 2026 — Kalkallo:** completed home handover.
+
+These facts are used only as textual proof in the prototype. Do not pair them with unrelated stock photography or imply stock media depicts those exact projects.
