@@ -8,6 +8,7 @@ import { BuildMap } from "@/components/BuildMap";
 import { StartConversation } from "@/components/StartConversation";
 import { ProofStrip } from "@/components/ProofStrip";
 import { JsonLd } from "@/components/JsonLd";
+import { CinematicBreak } from "@/components/CinematicBreak";
 
 export default function Home(){
   return <main id="main"><JsonLd />
@@ -23,6 +24,6 @@ export default function Home(){
         </div>
       </div>
     </section>
-    <ProofStrip /><HomeDesigns /><WowStudio /><BuildJourney /><ProjectArchive /><KnockdownRebuild /><BuildMap /><StartConversation />
+    <ProofStrip /><HomeDesigns /><WowStudio /><CinematicBreak /><BuildJourney /><ProjectArchive /><KnockdownRebuild /><BuildMap /><StartConversation />
   </main>;
 }
