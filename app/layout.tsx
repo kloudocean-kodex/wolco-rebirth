@@ -5,6 +5,7 @@ import { SmoothScroll } from "@/components/SmoothScroll";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { RedlineProgress } from "@/components/RedlineProgress";
+import { ExperienceNav } from "@/components/ExperienceNav";
 
 const display = Cormorant_Garamond({subsets:["latin"],variable:"--font-display",weight:["400","500","600"],display:"swap"});
 const sans = Manrope({subsets:["latin"],variable:"--font-sans",display:"swap"});
@@ -18,6 +19,6 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}:{children:React.ReactNode}) {
   return <html lang="en" className={`${display.variable} ${sans.variable}`}><body>
-    <SmoothScroll><a className="skip-link" href="#main">Skip to content</a><RedlineProgress /><SiteHeader />{children}<SiteFooter /></SmoothScroll>
+    <SmoothScroll><a className="skip-link" href="#main">Skip to content</a><RedlineProgress /><ExperienceNav /><SiteHeader />{children}<SiteFooter /></SmoothScroll>
   </body></html>;
 }
