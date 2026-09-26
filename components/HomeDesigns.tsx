@@ -39,12 +39,6 @@ export function HomeDesigns(){
       if(!root.current||!track.current)return;
       const distance=()=>Math.max(0,track.current!.scrollWidth-window.innerWidth);
       gsap.to(track.current,{x:()=>-distance(),ease:"none",scrollTrigger:{trigger:root.current,start:"top top",end:()=>`+=${distance()+window.innerHeight*.72}`,scrub:.8,pin:true,invalidateOnRefresh:true}});
-      gsap.utils.toArray<HTMLElement>(".design-panel").forEach((panel)=>{
-        const image=panel.querySelector(".design-image");
-        const copy=panel.querySelector(".design-copy");
-        gsap.fromTo(image,{scale:1.08},{scale:1,ease:"none",scrollTrigger:{trigger:panel,containerAnimation:ScrollTrigger.getById("designTrack")?.animation,start:"left right",end:"right left",scrub:true}});
-        if(copy) gsap.from(copy,{opacity:0,y:18,duration:.8,scrollTrigger:{trigger:panel,start:"left 65%" }});
-      });
     })},root);
     return()=>{mm.revert();ctx.revert()};
   },[]);
