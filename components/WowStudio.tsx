@@ -1,22 +1,116 @@
 "use client";
-import { useLayoutEffect,useRef } from "react";
+
+import { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-const materials=[
-["STONE","https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=85"],
-["TIMBER","https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1600&q=85"],
-["LIGHT","https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=85"]];
+
+const materials = [
+  {
+    id: "01",
+    name: "COUNTERTOPS",
+    kicker: "SURFACE / TEXTURE / TONE",
+    copy: "Compare surfaces at full scale and understand how colour, veining and texture change the character of a kitchen.",
+    image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2200&q=88",
+  },
+  {
+    id: "02",
+    name: "FLOORING",
+    kicker: "FLOW / WARMTH / CONTINUITY",
+    copy: "See flooring as part of the whole interior language — not as an isolated sample chosen from a catalogue.",
+    image: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2200&q=88",
+  },
+  {
+    id: "03",
+    name: "CABINETRY",
+    kicker: "FORM / STORAGE / DETAIL",
+    copy: "Explore profiles, finishes and combinations that let cabinetry support the architecture rather than compete with it.",
+    image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=2200&q=88",
+  },
+  {
+    id: "04",
+    name: "TAPWARE + FINISHES",
+    kicker: "TOUCH / HARDWARE / ACCENT",
+    copy: "Bring the smallest decisions into the same design conversation — tapware, hardware, tones and the details that complete a room.",
+    image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=2200&q=88",
+  },
+];
+
 export function WowStudio(){
   const root=useRef<HTMLElement>(null);
-  useLayoutEffect(()=>{const ctx=gsap.context(()=>{
-    gsap.from(".material-card",{y:80,opacity:0,stagger:.15,duration:1.1,ease:"power3.out",scrollTrigger:{trigger:".materials-grid",start:"top 75%"}});
-    gsap.from(".wow-quote span",{yPercent:120,stagger:.08,duration:.9,ease:"power4.out",scrollTrigger:{trigger:".wow-quote",start:"top 80%"}});
-  },root);return()=>ctx.revert()},[]);
-  return <section ref={root} id="wow" className="wow section-pad surface-ivory">
-    <div className="eyebrow row-between"><span>03 / WORLD OF WOLCO</span><span>SELECTION STUDIO · EPPING</span></div>
-    <div className="wow-intro"><h2 className="display-xl wow-quote"><span>Touch.</span><br/><span>Compare.</span><br/><span className="accent">Make it yours.</span></h2><p className="lede">The WOW Studio turns decisions into a tactile design experience. Materials, finishes and details are brought together in one place so your home feels considered before it is built.</p></div>
-    <div className="materials-grid">{materials.map(([name,image],i)=><article className="material-card" key={name}><div className="material-img" style={{backgroundImage:`url("${image}")`}}/><div className="material-caption"><span>0{i+1}</span><strong>{name}</strong></div></article>)}</div>
-    <div className="wow-bottom"><p>NOT A CATALOGUE.<br/>A PLACE TO SEE YOUR HOME COME TOGETHER.</p><a className="text-link" href="#start">Book a WOW Studio visit</a></div>
+  const [active,setActive]=useState(0);
+
+  useLayoutEffect(()=>{
+    const ctx=gsap.context(()=>{
+      gsap.from(".wow-stage",{
+        clipPath:"inset(12% 12% 12% 12%)",
+        scale:.96,
+        duration:1.25,
+        ease:"power3.out",
+        scrollTrigger:{trigger:".wow-stage",start:"top 78%"}
+      });
+      gsap.from(".wow-material-row",{
+        opacity:0,
+        y:26,
+        stagger:.09,
+        duration:.7,
+        ease:"power3.out",
+        scrollTrigger:{trigger:".wow-material-list",start:"top 82%"}
+      });
+    },root);
+    return()=>ctx.revert();
+  },[]);
+
+  const current=materials[active];
+
+  return <section ref={root} id="wow" className="wow wow-v2 section-pad surface-ivory">
+    <div className="eyebrow row-between"><span>03 / WORLD OF WOLCO</span><span>WOW SELECTION STUDIO · EPPING</span></div>
+
+    <div className="wow-v2-head">
+      <h2 className="display-xl">Not a catalogue.<br/><em>See it together.</em></h2>
+      <div className="wow-v2-copy">
+        <p className="lede">Wolco describes WOW Studio as its World of Wolco — a place to select materials and finishes for a home that reflects how you want to live.</p>
+        <p className="wow-source-note">Prototype imagery is temporary; the final experience will use Wolco Studio photography and real selection material.</p>
+      </div>
+    </div>
+
+    <div className="wow-experience">
+      <div className="wow-stage" aria-live="polite">
+        {materials.map((m,i)=><div
+          key={m.id}
+          className={`wow-stage-image ${i===active?"is-active":""}`}
+          style={{backgroundImage:`url("${m.image}")`}}
+          aria-hidden={i!==active}
+        />)}
+        <div className="wow-stage-shade"/>
+        <div className="wow-stage-index">{current.id} / 04</div>
+        <div className="wow-stage-copy">
+          <span>{current.kicker}</span>
+          <h3>{current.name}</h3>
+          <p>{current.copy}</p>
+        </div>
+      </div>
+
+      <div className="wow-material-list" role="list" aria-label="WOW Studio material categories">
+        {materials.map((m,i)=><button
+          key={m.id}
+          type="button"
+          className={`wow-material-row ${i===active?"is-active":""}`}
+          onMouseEnter={()=>setActive(i)}
+          onFocus={()=>setActive(i)}
+          onClick={()=>setActive(i)}
+          aria-pressed={i===active}
+        >
+          <span className="wow-material-num">{m.id}</span>
+          <span className="wow-material-name">{m.name}</span>
+          <span className="wow-material-arrow" aria-hidden="true">↗</span>
+        </button>)}
+      </div>
+    </div>
+
+    <div className="wow-bottom wow-v2-bottom">
+      <p>TOUCH IT.<br/>COMPARE IT.<br/><span>MAKE IT YOURS.</span></p>
+      <a className="text-link" href="#start">Plan a WOW Studio visit</a>
+    </div>
   </section>;
 }
