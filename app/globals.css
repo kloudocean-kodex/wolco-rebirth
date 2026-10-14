@@ -252,3 +252,12 @@ a{color:inherit;text-decoration:none}button,input,select{font:inherit}::selectio
 }
 
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.001ms!important}}
+
+
+/* V5 opt-in cinematic film enhancement. Image-based REDLINE fallback stays intact. */
+.hero-film{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;pointer-events:none;transition:opacity 900ms ease;}
+.hero-film.is-ready{opacity:1}
+.hero-film-toggle{position:absolute;right:clamp(18px,4vw,72px);top:95px;z-index:8;padding:12px 15px;color:#f8f6f2;background:rgba(10,10,10,.56);border:1px solid rgba(255,255,255,.5);font-size:10px;letter-spacing:.14em;cursor:pointer;backdrop-filter:blur(8px)}
+.hero-film-toggle:hover{border-color:var(--red);background:rgba(10,10,10,.88)}
+.hero-film-toggle:focus-visible{outline:3px solid #fff;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){.hero-film{display:none}.hero-film-toggle{display:none}}
