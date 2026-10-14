@@ -1,7 +1,7 @@
 name: Quality
 on:
   push:
-    branches: ["feat/redline-rebirth", "main"]
+    branches: ["feat/redline-rebirth", "feat/redline-v5-motionsite-study", "main"]
   pull_request:
     branches: ["main"]
 jobs:
