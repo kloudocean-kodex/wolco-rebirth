@@ -16,10 +16,10 @@ const steps=[
 
 export function BuildJourney(){
   const root=useRef<HTMLElement>(null);
-  useLayoutEffect(()=>{const ctx=gsap.context(()=>{
+  useLayoutEffect(()=>{const mm=gsap.matchMedia();const ctx=gsap.context(()=>{mm.add("(prefers-reduced-motion: no-preference)",()=>{
     gsap.fromTo(".journey-progress",{scaleY:0},{scaleY:1,ease:"none",scrollTrigger:{trigger:root.current,start:"top center",end:"bottom center",scrub:true}});
     gsap.utils.toArray<HTMLElement>(".journey-step").forEach(step=>gsap.from(step,{opacity:.22,y:36,scrollTrigger:{trigger:step,start:"top 72%",end:"top 48%",scrub:true}}));
-  },root);return()=>ctx.revert()},[]);
+  });},root);return()=>{mm.revert();ctx.revert()}},[]);
   return <section ref={root} id="journey" className="journey section-pad surface-black">
     <div className="journey-title">
       <div className="eyebrow">04 / THE BUILD JOURNEY</div>
