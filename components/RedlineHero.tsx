@@ -2,9 +2,11 @@
 import { useLayoutEffect,useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { HeroFilm } from "@/components/HeroFilm";
 gsap.registerPlugin(ScrollTrigger);
 
 export function RedlineHero(){
+  const approvedFilm = process.env.NEXT_PUBLIC_WOLCO_APPROVED_HERO_VIDEO || "";
   const root=useRef<HTMLElement>(null);
   useLayoutEffect(()=>{
     if(!root.current)return;
@@ -30,7 +32,7 @@ export function RedlineHero(){
     return()=>{mm.revert();ctx.revert()};
   },[]);
   return <section ref={root} id="top" className="hero" aria-label="Wolco Homes introduction">
-    <div className="hero-frame" aria-hidden="true"/><div className="hero-shade" aria-hidden="true"/>
+    <div className="hero-frame"><HeroFilm src={approvedFilm}/></div><div className="hero-shade" aria-hidden="true"/>
     <svg className="hero-blueprint" viewBox="0 0 1440 900" aria-hidden="true">
       <path className="blueprint-path" pathLength="1" d="M36 730 H205 V616 H388 V680 H522 V476 H742 V568 H880 V355 H1114 V500 H1288 V730 H1398 M205 616 V430 H388 V680 M522 476 V294 H742 V568 M880 355 V220 H1114 V500 M36 730 L175 800 H1250 L1398 730 M742 294 L880 355"/>
       <path className="blueprint-ghost" d="M154 790 V120 M455 790 V120 M756 790 V120 M1057 790 V120 M1358 790 V120"/>
