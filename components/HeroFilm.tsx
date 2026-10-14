@@ -6,29 +6,29 @@
  * when there is no approved film, on reduced-motion devices, or with Save-Data.
  * Never use example/demo video URLs from third-party templates in production.
  */
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 
 type NavigatorWithConnection = Navigator & { connection?: { saveData?: boolean } };
 
+function subscribeMotionPreferences(onChange: () => void) {
+  const query = window.matchMedia("(prefers-reduced-motion: reduce)");
+  query.addEventListener("change", onChange);
+  return () => query.removeEventListener("change", onChange);
+}
+function browserPermitsFilm() {
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const saveData = (navigator as NavigatorWithConnection).connection?.saveData === true;
+  return !reduced && !saveData;
+}
+function serverPermitsFilm() { return false; }
+
 export function HeroFilm({ src }: { src: string }) {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [eligible, setEligible] = useState(false);
+  const eligible = useSyncExternalStore(subscribeMotionPreferences, browserPermitsFilm, serverPermitsFilm);
   const [ready, setReady] = useState(false);
   const [playing, setPlaying] = useState(false);
 
   const safeSrc = src.startsWith("/") || src.startsWith("https://") ? src : "";
-
-  useEffect(() => {
-    if (!safeSrc) return;
-    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const update = () => {
-      const saveData = (navigator as NavigatorWithConnection).connection?.saveData === true;
-      setEligible(!reduced.matches && !saveData);
-    };
-    update();
-    reduced.addEventListener("change", update);
-    return () => reduced.removeEventListener("change", update);
-  }, [safeSrc]);
 
   useEffect(() => {
     const video = videoRef.current;
