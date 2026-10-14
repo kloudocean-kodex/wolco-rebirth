@@ -1,0 +1,8 @@
+import type {Metadata} from "next";
+import {BuilderPage} from "@/components/BuilderPage";
+import {wolco} from "@/content/wolco";
+export const metadata:Metadata={title:"Contact WOLCO HOMES",description:"Speak to WOLCO HOMES about building a custom home, home designs, WOW Studio selections or a knockdown rebuild in Melbourne."};
+export default function Page(){return <BuilderPage number="05" eyebrow="BEGIN HERE" title="Let's talk about" italic="your home." description="A considered first conversation is the foundation of every extraordinary project. Contact the WOLCO team to explore your next step.">
+ <section className="contact-panels"><div><span className="micro">CALL THE TEAM</span><a className="contact-phone" href={wolco.phoneHref}>{wolco.phoneDisplay} ↗</a><p>Custom homes · New home designs · Knockdown rebuild</p></div><div><span className="micro">VISIT WORLD OF WOLCO</span><h2>{wolco.address[0]}<br/>{wolco.address[1]}</h2><a className="route-back" href="https://www.google.com/maps/search/?api=1&query=9%2F28+Longford+Road+Epping+VIC+3076" target="_blank" rel="noopener noreferrer">GET DIRECTIONS ↗</a><p>Arrange an appointment before visiting. Hours and availability should be confirmed by telephone.</p></div></section>
+ <section className="contact-honesty"><span className="micro">ENQUIRY FORM / PRODUCTION INTEGRATION</span><p>Online enquiry submission will be enabled once WOLCO supplies and approves its receiving email or CRM endpoint. Until then, call the team directly — we will not show a form that falsely claims to send an enquiry.</p></section>
+ </BuilderPage>}
