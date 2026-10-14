@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://wolcohomes.com.au"),
   title:{default:"Wolco Homes — From Line to Life",template:"%s — Wolco Homes"},
   description:"Custom homes, knockdown rebuilds and house & land experiences in Melbourne. Designed with intent. Built around you.",
+  robots:{index:false,follow:false},
   openGraph:{title:"Wolco Homes — From Line to Life",description:"A new cinematic digital experience for Wolco Homes, Melbourne.",type:"website",locale:"en_AU"}
 };
 
