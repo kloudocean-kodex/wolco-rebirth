@@ -64,7 +64,7 @@ export function WarmRebirth() {
    <section className="w-manifesto w-section" aria-labelledby="w-statement">
      <div className="w-section-label"><span>01 / OUR WAY OF SEEING</span><span>WOLCO HOMES · VICTORIA</span></div>
      <div className="w-manifesto-body">
-       <h2 id="w-statement" className="w-display">It's not just<br/>a house. <em>It's yours.</em></h2>
+       <h2 id="w-statement" className="w-display">It&apos;s not just<br/>a house. <em>It&apos;s yours.</em></h2>
        <div className="w-side-editorial"><span className="w-rule-red"/><p className="w-quotation">“The most extraordinary spaces are the ones that feel entirely natural to live in.”</p><p>At WOLCO, a home begins with a conversation—how you live, the details that matter and the possibilities ahead. Home designs, the World of Wolco selection experience and a guided pre-construction journey come together in one considered path.</p><Link href="/build-journey/" className="w-underlink">EXPLORE HOW WE BUILD <span>↗</span></Link></div>
      </div>
      <div className="w-manifesto-foot"><span>PERSONAL IN THE MAKING.</span><span>ENDURING BY DESIGN.</span></div>
@@ -125,7 +125,7 @@ export function WarmRebirth() {
 
    <section className="w-process w-section" id="w-process" aria-labelledby="w-process-title">
      <div className="w-section-label"><span>05 / THE JOURNEY</span><span>WOLCO'S 12 STEPS TO START BUILDING</span></div>
-     <div className="w-process-intro"><h2 id="w-process-title" className="w-display">A clear path<br/><em>to something new.</em></h2><p>The greatest luxury is being guided with care. WOLCO's official 12-step pre-construction roadmap—from the first proposal to construction commencement—helps make the process tangible.</p></div>
+     <div className="w-process-intro"><h2 id="w-process-title" className="w-display">A clear path<br/><em>to something new.</em></h2><p>The greatest luxury is being guided with care. WOLCO&apos;s official 12-step pre-construction roadmap—from the first proposal to construction commencement—helps make the process tangible.</p></div>
      <div className="w-process-body">
        <div className="w-process-selected"><div className="w-process-stepnum">{String(step+1).padStart(2,"0")}<span>/ 12</span></div><span className="w-mini-heading">CURRENT MILESTONE</span><h3>{selectedStep.title}</h3><p>{selectedStep.detail}</p><span className="w-process-who">{selectedStep.who}</span><Link href="/build-journey/" className="w-underlink">EXPLORE THE FULL JOURNEY <span>↗</span></Link></div>
        <div className="w-process-list" role="group" aria-label="WOLCO twelve building milestones">
@@ -138,7 +138,7 @@ export function WarmRebirth() {
    <section className="w-film" aria-labelledby="w-film-title">
      <div className="w-film-image" role="img" aria-label="Concept architectural photograph representing cinematic art direction"/>
      <div className="w-film-shade"/>
-     <div className="w-film-content"><span>06 / THE ART OF ARRIVAL</span><h2 id="w-film-title">Architecture<br/>you can <em>feel.</em></h2><p>A home is more than a finished photograph. It's the light, the pause, the welcome and the life that unfolds within.</p><Link href="/contact/" className="w-film-link">BEGIN YOUR CONVERSATION ↗</Link></div>
+     <div className="w-film-content"><span>06 / THE ART OF ARRIVAL</span><h2 id="w-film-title">Architecture<br/>you can <em>feel.</em></h2><p>A home is more than a finished photograph. It&apos;s the light, the pause, the welcome and the life that unfolds within.</p><Link href="/contact/" className="w-film-link">BEGIN YOUR CONVERSATION ↗</Link></div>
      <div className="w-film-note">VISUAL MOOD STUDY / NOT A VERIFIED WOLCO PROJECT</div>
    </section>
 
@@ -153,7 +153,7 @@ export function WarmRebirth() {
 
    <section className="w-contact" aria-labelledby="w-contact-title">
      <div className="w-section-label"><span>08 / THE NEXT CHAPTER</span><span>WOLCO HOMES / MELBOURNE</span></div>
-     <div className="w-contact-grid"><h2 id="w-contact-title">Shall we make<br/>something <em>extraordinary?</em></h2><div><p>It begins with an idea, a block of land, or simply a feeling that it's time for a different home. Let's have that first conversation.</p><Link className="w-pill-primary" href="/contact/">PLAN YOUR HOME <span>↗</span></Link><a className="w-underlink" href={wolco.phoneHref}>OR CALL {wolco.phoneDisplay} <span>↗</span></a></div></div>
+     <div className="w-contact-grid"><h2 id="w-contact-title">Shall we make<br/>something <em>extraordinary?</em></h2><div><p>It begins with an idea, a block of land, or simply a feeling that it&apos;s time for a different home. Let&apos;s have that first conversation.</p><Link className="w-pill-primary" href="/contact/">PLAN YOUR HOME <span>↗</span></Link><a className="w-underlink" href={wolco.phoneHref}>OR CALL {wolco.phoneDisplay} <span>↗</span></a></div></div>
    </section>
   </main>
  );
