@@ -279,3 +279,12 @@ body{background:var(--w-paper)}
  .w-subsection-grid article,.w-subsection-grid article+article{padding:30px 0 45px;border-right:0}
  .w-subsection-grid article h3{margin:35px 0 20px}
 }
+
+/* V8 wordmark proxy based on the actual branded logo identified in the client asset library.
+   This is typographic staging fallback, not a replacement for the owned original raster/vector. */
+.site-header .brand{align-items:center;gap:4px}
+.site-header .brand-mark{display:none}
+.site-header .brand-word{position:relative;color:#bd0008;font-family:Arial,Helvetica,sans-serif;font-weight:900;font-size:21px;line-height:.78;letter-spacing:-.045em}
+.site-header .brand-small{font-size:9px;letter-spacing:.46em;color:#20201e;font-weight:700;text-align:right;line-height:2.3}
+.site-header .brand-small::before{content:"";display:block;position:absolute;width:17px;height:7px;left:2px;bottom:6px;background:#fee260}
+@media(max-width:520px){.site-header .brand-word{font-size:18px}.site-header .brand-small{font-size:8px}}
