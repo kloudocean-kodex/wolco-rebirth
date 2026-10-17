@@ -1,7 +1,7 @@
 "use client";
 import {useEffect,useState} from "react";
 import Link from "next/link";
-const nav=[["HOME DESIGNS","/home-designs/"],["KNOCKDOWN REBUILD","/knockdown-rebuild/"],["WOW STUDIO","/world-of-wolco/"],["THE JOURNEY","/build-journey/"]];
+const nav=[["HOME DESIGNS","/home-designs/"],["CUSTOM HOMES","/custom-homes/"],["KNOCKDOWN REBUILD","/knockdown-rebuild/"],["WOW STUDIO","/world-of-wolco/"],["THE JOURNEY","/build-journey/"]];
 export function SiteHeader(){
  const [open,setOpen]=useState(false),[scrolled,setScrolled]=useState(false);
  useEffect(()=>{const fn=()=>setScrolled(window.scrollY>45);fn();window.addEventListener("scroll",fn,{passive:true});return()=>window.removeEventListener("scroll",fn)},[]);
@@ -17,7 +17,7 @@ export function SiteHeader(){
   <div id="site-menu" className={`menu-overlay ${open?"is-open":""}`} aria-hidden={!open} inert={!open}>
    <div className="menu-index">WOLCO / NAVIGATION / MELBOURNE</div>
    <nav className="menu-links" aria-label="Full site navigation">
-    {[["HOME","/"],...nav,["CONTACT","/contact/"]].map(([l,h],i)=><Link key={l} href={h} onClick={()=>setOpen(false)}><small>{String(i+1).padStart(2,"0")}</small><span>{l}</span></Link>)}
+    {[["HOME","/"],...nav,["HOUSE & LAND","/house-and-land/"],["ABOUT WOLCO","/about/"],["CONTACT","/contact/"]].map(([l,h],i)=><Link key={l} href={h} onClick={()=>setOpen(false)}><small>{String(i+1).padStart(2,"0")}</small><span>{l}</span></Link>)}
    </nav>
    <div className="menu-foot"><span>EPPING · VICTORIA</span><span>WE DON&apos;T BUILD ORDINARY.</span></div>
   </div>
