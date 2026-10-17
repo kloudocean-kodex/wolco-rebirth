@@ -124,7 +124,7 @@ export function WarmRebirth() {
    </section>
 
    <section className="w-process w-section" id="w-process" aria-labelledby="w-process-title">
-     <div className="w-section-label"><span>05 / THE JOURNEY</span><span>WOLCO'S 12 STEPS TO START BUILDING</span></div>
+     <div className="w-section-label"><span>05 / THE JOURNEY</span><span>WOLCO&apos;S 12 STEPS TO START BUILDING</span></div>
      <div className="w-process-intro"><h2 id="w-process-title" className="w-display">A clear path<br/><em>to something new.</em></h2><p>The greatest luxury is being guided with care. WOLCO&apos;s official 12-step pre-construction roadmap—from the first proposal to construction commencement—helps make the process tangible.</p></div>
      <div className="w-process-body">
        <div className="w-process-selected"><div className="w-process-stepnum">{String(step+1).padStart(2,"0")}<span>/ 12</span></div><span className="w-mini-heading">CURRENT MILESTONE</span><h3>{selectedStep.title}</h3><p>{selectedStep.detail}</p><span className="w-process-who">{selectedStep.who}</span><Link href="/build-journey/" className="w-underlink">EXPLORE THE FULL JOURNEY <span>↗</span></Link></div>
