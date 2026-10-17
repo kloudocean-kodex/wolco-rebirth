@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
+import "./warm-rebirth.css";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
@@ -12,10 +13,10 @@ const sans = Manrope({subsets:["latin"],variable:"--font-sans",display:"swap"});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://wolcohomes.com.au"),
-  title:{default:"Wolco Homes — From Line to Life",template:"%s — Wolco Homes"},
-  description:"Custom homes, knockdown rebuilds and house & land experiences in Melbourne. Designed with intent. Built around you.",
+  title:{default:"WOLCO Homes — A New Perspective on Home",template:"%s — WOLCO Homes"},
+  description:"Explore WOLCO Homes Melbourne — considered home designs, knockdown rebuild and the World of Wolco selection experience. A home shaped around your life.",
   robots:{index:false,follow:false},
-  openGraph:{title:"Wolco Homes — From Line to Life",description:"A new cinematic digital experience for Wolco Homes, Melbourne.",type:"website",locale:"en_AU"}
+  openGraph:{title:"WOLCO Homes — A New Perspective on Home",description:"A considered architectural home-building experience in Melbourne.",type:"website",locale:"en_AU"}
 };
 
 export default function RootLayout({children}:{children:React.ReactNode}) {
