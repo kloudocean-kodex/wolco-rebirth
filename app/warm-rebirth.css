@@ -248,3 +248,34 @@ body{background:var(--w-paper)}
  .w-contact-grid h2{font-size:clamp(73px,13vw,110px)}
 }
 @media(prefers-reduced-motion:reduce){.w-home *{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Complete-service pages: aligned with the warm editorial system. */
+.builder-route{background:var(--w-paper);color:var(--w-ink)}
+.builder-route-head{background:var(--w-paper)}
+.builder-route-title{font-weight:400;color:var(--w-ink)}
+.builder-route-title em{color:var(--w-red)}
+.route-end{background:#e8e0d6;color:var(--w-ink)}
+.route-end h2 em{color:var(--w-red)}
+.route-button{background:var(--w-red)}
+.w-subsection{padding:clamp(100px,11vw,185px) var(--w-edge);background:var(--w-white)}
+.w-subsection-head{display:grid;grid-template-columns:1.25fr .75fr;gap:22px 8vw;margin-bottom:clamp(75px,9vw,135px)}
+.w-subsection-head>.micro{grid-column:1/-1;color:var(--w-red)}
+.w-subsection-head h2{font:400 clamp(70px,9.7vw,158px)/.86 var(--w-serif);letter-spacing:-.05em;margin:35px 0 0}
+.w-subsection-head h2 em{color:var(--w-red)}
+.w-subsection-head p{font-size:clamp(18px,2vw,27px);line-height:1.55;align-self:end;color:var(--w-muted);max-width:470px;margin:0}
+.w-subsection-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid #3b322729;margin-bottom:65px}
+.w-subsection-grid article{border-right:1px solid #3b322729;border-bottom:1px solid #3b322729;padding:40px clamp(15px,3vw,50px) 50px 0}
+.w-subsection-grid article+article{padding-left:clamp(15px,3vw,50px)}
+.w-subsection-grid article:last-child{border-right:0}
+.w-subsection-grid article span{font-size:11px;letter-spacing:.14em;color:var(--w-red)}
+.w-subsection-grid article h3{font:400 clamp(35px,3.8vw,68px)/1 var(--w-serif);margin:75px 0 25px}
+.w-subsection-grid article p,.w-subsection-action p{font-size:16px;line-height:1.75;color:var(--w-muted)}
+.w-subsection-action{display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.w-subsection-action p{max-width:560px;margin:0}
+@media(max-width:800px){
+ .w-subsection-head{grid-template-columns:1fr}
+ .w-subsection-head p{margin-top:15px;max-width:560px}
+ .w-subsection-grid{grid-template-columns:1fr}
+ .w-subsection-grid article,.w-subsection-grid article+article{padding:30px 0 45px;border-right:0}
+ .w-subsection-grid article h3{margin:35px 0 20px}
+}
