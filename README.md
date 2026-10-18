@@ -1,59 +1,37 @@
-# Wolco Rebirth
+# WOLCO / REDLINE
 
-A bespoke cinematic rebuild for **Wolco Homes**, a Melbourne custom-home builder.
+**From line to life.** An architectural design preview for WOLCO Homes, Melbourne.
 
-## Direction
+The experience connects considered home design, personal material choices and WOLCO's published pre-construction journey. Original WOLCO branding, a coherent set of generated design visualisations and restrained crimson linework bring the story together.
 
-**WOLCO / REDLINE — FROM LINE TO LIFE.**
+## Run and verify
 
-This branch turns Wolco's actual builder journey into the interaction language: plan → design → personalise → build → home.
+Node 20.9 or newer is required.
 
-## Stack
-
-- Next.js 16 / React 19
-- TypeScript
-- GSAP + ScrollTrigger
-- Lenis smooth scroll
-- Bespoke CSS art direction (no component-template framework)
-
-## Instant browser preview
-
-Open the working branch directly in StackBlitz:
-
-https://stackblitz.com/github/kloudocean-kodex/wolco-rebirth/tree/feat/redline-rebirth?startScript=dev
-
-The repository remains the source of truth; refreshing the StackBlitz import picks up branch changes.
-
-## Run
-
-```bash
-npm install
+```sh
+npm ci
 npm run dev
-```
-
-Quality gates:
-
-```bash
 npm run lint
 npm run build
+npm audit --omit=dev
 ```
 
-## Current build
+`npm run build` creates a static export in `out/`. This can be hosted on Cloudflare Pages. Development uses `.next-dev/`; production builds use `.next/` so browser review and builds can run independently.
 
-The first cinematic foundation includes:
+## Experience
 
-- architectural red-line hero
-- scroll choreography and reduced-motion fallback
-- editorial manifesto
-- horizontal home-design story
-- WOW Studio material chapter
-- build-journey timeline
-- completed-project archive
-- knockdown-rebuild reveal
-- build-area map
-- premium enquiry sequence
-- mobile-specific interaction fallbacks
+- Thirteen content routes, including three collection details, and a branded 404.
+- Native modal menu, keyboard access and reduced-motion support.
+- Responsive local WebP images in 640, 960 and 1600px versions.
+- Interactive collection and material studies.
+- Twelve native journey disclosures and contact FAQs.
+- A silent, explicitly controlled concept film.
+- Local enquiry brief with validation, review, editing, download and an explicit email draft. The preview does not submit leads.
 
-See `docs/ART_DIRECTION.md` for the visual system and production asset gates.
+## Content and release boundary
 
-> Temporary stock architecture images are being used for composition and motion prototyping only. Replace with verified Wolco-owned media before public production.
+Architectural images are concept visualisations, not completed WOLCO builds or confirmed collection plans. Their purpose is explained at `/visual-studies/`. No private client shoot was imported.
+
+Staging remains `noindex,nofollow`. Final business/legal terms, media rights, catalogue specifications, the actual receiving lead system, migration redirects and client release approval remain distinct production requirements.
+
+See [the refinement audit](docs/REDLINE_REFINEMENT_2026-10-18.md) for source findings, implementation and verification boundaries. Historical art-direction notes are retained for context; they do not override the current implementation or final release evidence.

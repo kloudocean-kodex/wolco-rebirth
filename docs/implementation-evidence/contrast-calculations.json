@@ -1,0 +1,46 @@
+{
+  "method": "WCAG relative luminance; solid neutral surfaces only, browser rendering is a separate gate",
+  "muted_text": [
+    {
+      "foreground": "#5c5d53",
+      "surface": "#f7f4ed",
+      "ratio": 6.08
+    },
+    {
+      "foreground": "#5c5d53",
+      "surface": "#eee8dd",
+      "ratio": 5.47
+    },
+    {
+      "foreground": "#5c5d53",
+      "surface": "#fcfbf7",
+      "ratio": 6.45
+    },
+    {
+      "foreground": "#5c5d53",
+      "surface": "#eee9df",
+      "ratio": 5.52
+    },
+    {
+      "foreground": "#5c5d53",
+      "surface": "#e5dece",
+      "ratio": 4.98
+    },
+    {
+      "foreground": "#5c5d53",
+      "surface": "#e8e1d3",
+      "ratio": 5.13
+    },
+    {
+      "foreground": "#5c5d53",
+      "surface": "#eae3d5",
+      "ratio": 5.23
+    }
+  ],
+  "input_boundary": {
+    "foreground": "#858679",
+    "surface": "#f7f4ed",
+    "ratio": 3.36
+  },
+  "image_text_treatment": "Top-edge hero/film gradient darkened to protect small light captions over the bright sky. Requires refreshed visual verification."
+}

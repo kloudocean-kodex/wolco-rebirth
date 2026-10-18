@@ -1,0 +1,110 @@
+{
+  "root": "C:\\Users\\gawar\\Downloads\\KloudOcean_ProddyG\\wolco-redline\\out",
+  "pageCount": 16,
+  "assetCount": 31,
+  "pages": [
+    "404.html",
+    "index.html",
+    "404/index.html",
+    "about/index.html",
+    "build-journey/index.html",
+    "contact/index.html",
+    "custom-homes/index.html",
+    "home-designs/index.html",
+    "house-and-land/index.html",
+    "knockdown-rebuild/index.html",
+    "visual-studies/index.html",
+    "world-of-wolco/index.html",
+    "_not-found/index.html",
+    "home-designs/aurelia/index.html",
+    "home-designs/elevate/index.html",
+    "home-designs/simplex/index.html"
+  ],
+  "issues": [],
+  "cssMissing": [],
+  "externalUrls": [
+    "https://www.google.com/maps/search/?api=1&query=9%2F28+Longford+Road+Epping+VIC+3076"
+  ],
+  "largestFiles": [
+    {
+      "file": "media/generated-architectural-story.mp4",
+      "bytes": 5773660
+    },
+    {
+      "file": "media/generated-exterior-film.mp4",
+      "bytes": 3667150
+    },
+    {
+      "file": "media/generated-exterior-dusk.webp",
+      "bytes": 373492
+    },
+    {
+      "file": "media/generated-materials.webp",
+      "bytes": 319764
+    },
+    {
+      "file": "media/generated-living.webp",
+      "bytes": 280890
+    },
+    {
+      "file": "_next/static/chunks/2fs51to985wx-.js",
+      "bytes": 229597
+    },
+    {
+      "file": "media/generated-kitchen.webp",
+      "bytes": 225132
+    },
+    {
+      "file": "media/generated-exterior-film-poster.webp",
+      "bytes": 170376
+    },
+    {
+      "file": "media/generated-architectural-story-poster.webp",
+      "bytes": 169856
+    },
+    {
+      "file": "_next/static/chunks/0d5c8h7ldlxvu.js",
+      "bytes": 168704
+    },
+    {
+      "file": "media/generated-exterior-dusk-960.webp",
+      "bytes": 151180
+    },
+    {
+      "file": "media/generated-materials-960.webp",
+      "bytes": 140262
+    },
+    {
+      "file": "media/generated-living-960.webp",
+      "bytes": 120910
+    },
+    {
+      "file": "_next/static/chunks/0cz1d0mv5g_q7.js",
+      "bytes": 112594
+    },
+    {
+      "file": "media/generated-kitchen-960.webp",
+      "bytes": 95944
+    },
+    {
+      "file": "media/generated-exterior-dusk-640.webp",
+      "bytes": 69106
+    },
+    {
+      "file": "media/generated-materials-640.webp",
+      "bytes": 65798
+    },
+    {
+      "file": "media/generated-living-640.webp",
+      "bytes": 58018
+    },
+    {
+      "file": "_next/static/chunks/14u3p5p3l5xd2.css",
+      "bytes": 53948
+    },
+    {
+      "file": "media/generated-kitchen-640.webp",
+      "bytes": 46212
+    }
+  ]
+}

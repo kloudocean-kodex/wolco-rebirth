@@ -1,10 +1,10 @@
-import type {Metadata} from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
-import {BuilderPage} from "@/components/BuilderPage";
-import {collections} from "@/content/wolco";
-export const metadata:Metadata={title:"Home Designs",description:"Explore WOLCO's Aurelia, Elevate and Simplex collections. Custom home designs, personalised around how you live."};
-export default function Page(){return <BuilderPage number="01" eyebrow="THE HOME COLLECTIONS" title="Designs worth" italic="living in." description="A considered starting point, not the end of your imagination. Explore WOLCO's three home collections and enquire about real plans, facades and available specifications.">
- <section className="collections-grid">{collections.map((c,i)=><article className="collection-feature" key={c.slug}>
-   <div className="collection-photo" style={{backgroundImage:`linear-gradient(0deg,rgba(10,9,9,.4),rgba(10,9,9,.05)),url('${c.image}')`}} role="img" aria-label="Illustrative architectural design mood image"/>
-   <div className="collection-text"><span className="micro">{String(i+1).padStart(2,"0")} / WOLCO COLLECTION</span><h2>{c.name}</h2><p>{c.description}</p><Link className="route-button" href={`/home-designs/${c.slug}/`}>EXPLORE COLLECTION <span>↗</span></Link><span className="visual-source">{c.imageCredit}</span></div>
- </article>)}</section></BuilderPage>}
+import { BuilderPage } from "@/components/BuilderPage";
+import { DesignImage } from "@/components/DesignImage";
+import { collections } from "@/content/wolco";
+
+export const metadata: Metadata = { title: "Home designs", description: "Explore WOLCO's Aurelia, Elevate and Simplex home collections. Find a direction for the way you want to live." };
+export default function Page() {
+  return <BuilderPage number="01" eyebrow="The home collections" title="Your life." italic="Your starting point." description="A considered beginning, with room for your own story. Explore three WOLCO collections, then talk with the team about plans, facades and options for your site."><section className="collections-grid">{collections.map((collection, index) => <article className="collection-feature" key={collection.slug}><DesignImage name={collection.media} alt={collection.alt} className="collection-photo"/><div className="collection-text"><span className="micro">0{index + 1} / {collection.eyebrow}</span><h2>{collection.name}</h2><p>{collection.description}</p><Link className="text-link" href={`/home-designs/${collection.slug}/`}>Explore the collection <span aria-hidden="true">↗</span></Link><span className="visual-source">{collection.imageCredit}</span></div></article>)}</section></BuilderPage>;
+}

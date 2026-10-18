@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-18",
+  "completed_genuine_ai_video_clip_count": 2,
+  "derived_story_count": 1,
+  "generated_still_count": 4,
+  "material_and_living_video_available": false,
+  "recommended_story": "generated-architectural-story.mp4",
+  "recommended_story_poster": "generated-architectural-story-poster.webp",
+  "separate_exterior_hero_option": "generated-exterior-film.mp4",
+  "video_files": [
+    {
+      "file": "generated-exterior-film.mp4",
+      "verification": {
+        "full_decode_ok": true,
+        "duration_seconds": 10.0,
+        "dimensions": [
+          1280,
+          720
+        ],
+        "fps": 24.0,
+        "decoded_frames": 240,
+        "has_audio": false,
+        "codec_line": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, smpte170m/bt709/iec61966-2-1, progressive), 1280x720 [SAR 1:1 DAR 16:9], 2930 kb/s, 24 fps, 24 tbr, 12288 tbn (default)",
+        "bytes": 3667150,
+        "sha256": "850d24d87f12b3a424f782b7ed261409aa5db61adcea804e8e4f261a93d4c038",
+        "faststart": true
+      },
+      "provenance": "generated-exterior-film-provenance.json"
+    },
+    {
+      "file": "generated-kitchen-film.mp4",
+      "verification": {
+        "full_decode_ok": true,
+        "duration_seconds": 10.0,
+        "dimensions": [
+          1280,
+          720
+        ],
+        "fps": 24.0,
+        "decoded_frames": 240,
+        "has_audio": false,
+        "codec_line": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, smpte170m/bt709/iec61966-2-1, progressive), 1280x720 [SAR 1:1 DAR 16:9], 1614 kb/s, 24 fps, 24 tbr, 12288 tbn (default)",
+        "bytes": 2021657,
+        "sha256": "2fbf6c61e9b59f36010056d7875850ff3a5530e8d3067cf5dc87f7d00c085a8c",
+        "faststart": true
+      },
+      "provenance": "generated-kitchen-film-provenance.json"
+    },
+    {
+      "file": "generated-architectural-story.mp4",
+      "verification": {
+        "full_decode_ok": true,
+        "duration_seconds": 19.42,
+        "dimensions": [
+          1280,
+          720
+        ],
+        "fps": 24.0,
+        "decoded_frames": 466,
+        "has_audio": false,
+        "codec_line": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, smpte170m/bt709/iec61966-2-1, progressive), 1280x720 [SAR 1:1 DAR 16:9], 2376 kb/s, 24 fps, 24 tbr, 12288 tbn (default)",
+        "bytes": 5773660,
+        "sha256": "a3810f288882047300542afe6ba4c5397228983b94da7658795676ce8371b191",
+        "faststart": true
+      },
+      "provenance": "generated-architectural-story-provenance.json"
+    }
+  ],
+  "generation_provider_observed_by_parent": "Gemini Create video; onboarding displayed Gemini Omni. Veo identity not assumed.",
+  "quota_limitation": "Gemini video creation disabled after two completed clips; no purchase or upgrade.",
+  "disclosure": "Fictional architectural design visualisations; not real completed WOLCO homes.",
+  "retained_still_motion_study": "generated-motion-study.mp4 is a separate earlier still-based motion study and is not the genuine AI video story.",
+  "site_qa_status": "Parent task owns live desktop/mobile playback, controls, reduced motion and focus verification."
+}

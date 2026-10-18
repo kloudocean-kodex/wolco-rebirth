@@ -4,14 +4,15 @@ export const wolco = {
   line:"We don't build ordinary. We build extraordinary.",
   phoneDisplay:"1300 16 36 66",
   phoneHref:"tel:1300163666",
+  email:"wolcohomes@gmail.com",
   address:["9/28 Longford Road","Epping VIC 3076"],
   planning:"/contact/",
 } as const;
-export type Collection = {slug:string;name:string;eyebrow:string;headline:string;description:string;image:string;imageCredit:string;};
+export type Collection = {slug:string;name:string;eyebrow:string;headline:string;description:string;image:string;imageCredit:string;media:string;alt:string;};
 export const collections:Collection[]=[
- {slug:"aurelia",name:"Aurelia",eyebrow:"01 / REFINED LIVING",headline:"Designed to feel extraordinary.",description:"The Aurelia collection explores elegance, considered proportions and thoughtful spaces. Ask our consultants for current plans, available facades and inclusions.",image:"https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=82",imageCredit:"Design mood image — not a verified WOLCO project."},
- {slug:"elevate",name:"Elevate",eyebrow:"02 / CONTEMPORARY LIVING",headline:"Contemporary living, elevated.",description:"The Elevate collection explores open modern living with a confident architectural presence. Final designs and specifications are confirmed with WOLCO.",image:"https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=82",imageCredit:"Design mood image — not a verified WOLCO project."},
- {slug:"simplex",name:"Simplex",eyebrow:"03 / INTENTIONAL LIVING",headline:"Simplicity is a design decision.",description:"The Simplex collection focuses on well-resolved everyday living and intelligent use of space. Request the current floorplans and specifications.",image:"https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1800&q=82",imageCredit:"Design mood image — not a verified WOLCO project."}
+ {slug:"aurelia",name:"Aurelia",eyebrow:"Refined living",headline:"Elegance, considered.",description:"A collection centred on elegance, thoughtful proportions and a sense of occasion in the everyday.",image:"/media/generated-exterior-dusk.webp",imageCredit:"Concept inspiration / Design visualisation",media:"generated-exterior-dusk",alt:"Concept inspiration: a contemporary stone and timber home at dusk, created as a design visualisation"},
+ {slug:"elevate",name:"Elevate",eyebrow:"Contemporary living",headline:"A fresh perspective.",description:"Contemporary living with an open outlook. Explore a confident architectural direction for the way you want to live.",image:"/media/generated-living.webp",imageCredit:"Concept inspiration / Design visualisation",media:"generated-living",alt:"Concept inspiration: a light-filled contemporary living space opening to a garden, created as a design visualisation"},
+ {slug:"simplex",name:"Simplex",eyebrow:"Intentional living",headline:"Beautifully resolved.",description:"Thoughtful everyday living, with an emphasis on purposeful space and an uncomplicated sense of home.",image:"/media/generated-kitchen.webp",imageCredit:"Concept inspiration / Design visualisation",media:"generated-kitchen",alt:"Concept inspiration: a calm kitchen with oak joinery and a pale stone island, created as a design visualisation"}
 ];
 export const preconstruction=[
   {title:"Request your detailed proposal",subtitle:"Start with a clear conversation.",detail:"Meet with your New Home Consultant at WOW Studio to discuss your home and request a detailed proposal.",who:"New Home Consultant · WOW Studio"},

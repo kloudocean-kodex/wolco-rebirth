@@ -1,0 +1,110 @@
+{
+  "observedAt": "2026-10-18",
+  "film": {
+    "full_decode_ok": true,
+    "duration_seconds": 38.42,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "fps": 24.0,
+    "decoded_frames": 922,
+    "has_audio": false,
+    "codec_line": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, smpte170m/bt709/iec61966-2-1, progressive), 1280x720 [SAR 1:1 DAR 16:9], 2518 kb/s, 24 fps, 24 tbr, 12288 tbn (default)",
+    "bytes": 12104844,
+    "sha256": "abdd480d1e95f29087cb9e36f8a542bb8527fee3da34e2539b7c6abc79edd1bd",
+    "faststart": true
+  },
+  "files": [
+    {
+      "file": "public/_headers",
+      "bytes": 294,
+      "sha256": "75c1d86bd4159f60a9a15de6a82b29da3c573e2a976c72844f24dd4a5fafdbac"
+    },
+    {
+      "file": "public/brand/wolco-original-logo.webp",
+      "bytes": 8926,
+      "sha256": "af886990434764ebbc263f624f8568c5251e5d3c42afe70182af636cc0f92c15"
+    },
+    {
+      "file": "public/media/generated-architectural-journey-poster.webp",
+      "bytes": 169856,
+      "sha256": "b1ee456b383efb19714e24d8eda1c495eba53b7f6b8760fc685615daa05b1005"
+    },
+    {
+      "file": "public/media/generated-architectural-journey.mp4",
+      "bytes": 12104844,
+      "sha256": "abdd480d1e95f29087cb9e36f8a542bb8527fee3da34e2539b7c6abc79edd1bd"
+    },
+    {
+      "file": "public/media/generated-exterior-dusk-640.webp",
+      "bytes": 69106,
+      "sha256": "8ad58c664900b75bbf43e73da9efca8af0e1aaa6b48fceee0c9b88a561359dde"
+    },
+    {
+      "file": "public/media/generated-exterior-dusk-960.webp",
+      "bytes": 151180,
+      "sha256": "5f473a9c69a67a9d7640c3b4a3f02bc51ba6e4577d4e89f79520f5767adc0628"
+    },
+    {
+      "file": "public/media/generated-exterior-dusk.webp",
+      "bytes": 373492,
+      "sha256": "d4bd9e5a5bdc18f2a95a4db3a88e22e26756a43f18278dca76307d7e74cb16e4"
+    },
+    {
+      "file": "public/media/generated-exterior-film-poster.webp",
+      "bytes": 170376,
+      "sha256": "ec9eed5f8c64a0dd627253c90d23d78d9978531a4433fd270da7faac1824fa76"
+    },
+    {
+      "file": "public/media/generated-exterior-film.mp4",
+      "bytes": 3667150,
+      "sha256": "850d24d87f12b3a424f782b7ed261409aa5db61adcea804e8e4f261a93d4c038"
+    },
+    {
+      "file": "public/media/generated-kitchen-640.webp",
+      "bytes": 46212,
+      "sha256": "091c73d4e2eadfc22907c9870c63a76721c3f0a148ac3ac0baf50b992e1caf78"
+    },
+    {
+      "file": "public/media/generated-kitchen-960.webp",
+      "bytes": 95944,
+      "sha256": "f36bb2a025ad20562259655bcf10ea93c23f2647855e4f84f5afd70fae306e48"
+    },
+    {
+      "file": "public/media/generated-kitchen.webp",
+      "bytes": 225132,
+      "sha256": "7bb91115109638698c98547b4bc1f09fd65a7ec0368e50cc547dbb20a9c7e8d1"
+    },
+    {
+      "file": "public/media/generated-living-640.webp",
+      "bytes": 58018,
+      "sha256": "f2249b4643071ea5babfbf3ab4cf95321922cc818529dcee5b7d2d2cbd933f08"
+    },
+    {
+      "file": "public/media/generated-living-960.webp",
+      "bytes": 120910,
+      "sha256": "69a8f6feeb7b81890b95d4e71b27974734f16e4e6fc208182fb82c9944a1ec54"
+    },
+    {
+      "file": "public/media/generated-living.webp",
+      "bytes": 280890,
+      "sha256": "bbee885dff19cc117edce95cf95cad5575ab0a8dc5a194b6d78ed63eef8e6d1e"
+    },
+    {
+      "file": "public/media/generated-materials-640.webp",
+      "bytes": 65798,
+      "sha256": "8455a8e05cda18f35e36bdcc631db9ddbab3f6e0715169df78dc37f7136bc167"
+    },
+    {
+      "file": "public/media/generated-materials-960.webp",
+      "bytes": 140262,
+      "sha256": "597ea776283096867793349e3cfe0c2d22b158f53a71c169c3ea06d557626569"
+    },
+    {
+      "file": "public/media/generated-materials.webp",
+      "bytes": 319764,
+      "sha256": "bed5989ca6b33b0761cbccbadf04a085fe503ff403ade85265a230c8bb260a0b"
+    }
+  ]
+}
