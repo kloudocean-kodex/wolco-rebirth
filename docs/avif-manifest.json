@@ -1,0 +1,131 @@
+{
+  "purpose": "Format-only performance derivatives of approved generated PNG masters, same framing/dimensions; WebP fallback retained.",
+  "settings": {
+    "codec": "AVIF",
+    "quality": 65,
+    "subsampling": "4:4:4",
+    "speed": 6
+  },
+  "assets": [
+    {
+      "file": "generated-exterior-dusk-640.avif",
+      "dimensions": [
+        640,
+        360
+      ],
+      "bytes": 38578,
+      "webpBytes": 69106,
+      "sha256": "d4081a17f89c7ace9282d9bcf1dd6d9e68b3d2fc1b1dc7130117ac9aa35828ca"
+    },
+    {
+      "file": "generated-exterior-dusk-960.avif",
+      "dimensions": [
+        960,
+        540
+      ],
+      "bytes": 87314,
+      "webpBytes": 151180,
+      "sha256": "52e46e7f8abe85b881f4b943819e4694e6df1a980ecb23d441a4c540699a6fe1"
+    },
+    {
+      "file": "generated-exterior-dusk.avif",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "bytes": 208470,
+      "webpBytes": 373492,
+      "sha256": "7579f67833572147062b58f54a64a190351e29bcf66ce7d934534718343362cd"
+    },
+    {
+      "file": "generated-kitchen-640.avif",
+      "dimensions": [
+        640,
+        360
+      ],
+      "bytes": 26262,
+      "webpBytes": 46212,
+      "sha256": "e2d636e457608664418ddfd3f3f29105e220a5b2075e8e9c2958b56c53fbc191"
+    },
+    {
+      "file": "generated-kitchen-960.avif",
+      "dimensions": [
+        960,
+        540
+      ],
+      "bytes": 56897,
+      "webpBytes": 95944,
+      "sha256": "41ff5c92df55b3d7031d96383c5fbd289e2ae9c8957c24441a23bd4b47249c93"
+    },
+    {
+      "file": "generated-kitchen.avif",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "bytes": 134239,
+      "webpBytes": 225132,
+      "sha256": "f0b874f74757e5d953844b1cd47af017fbe3ef911ab5c6293f9061375594b534"
+    },
+    {
+      "file": "generated-materials-640.avif",
+      "dimensions": [
+        640,
+        360
+      ],
+      "bytes": 37168,
+      "webpBytes": 65798,
+      "sha256": "62e2128a85606de50d6d100fc4356a17c370f8635693288c80d74ead70a6a8f7"
+    },
+    {
+      "file": "generated-materials-960.avif",
+      "dimensions": [
+        960,
+        540
+      ],
+      "bytes": 81873,
+      "webpBytes": 140262,
+      "sha256": "f32d6afcaed6e8e71ebf59654625bd90a3e4e34e26e715890270fc8526979bb5"
+    },
+    {
+      "file": "generated-materials.avif",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "bytes": 183173,
+      "webpBytes": 319764,
+      "sha256": "3fafbc10e2953fab3d7513e818d50a6299edc26f090e5bb73cc2147a110cf5c1"
+    },
+    {
+      "file": "generated-living-640.avif",
+      "dimensions": [
+        640,
+        360
+      ],
+      "bytes": 32508,
+      "webpBytes": 58018,
+      "sha256": "91c7992c09f467c3ab3623fb4a80c3026d099175776076ea98ac293385125bfb"
+    },
+    {
+      "file": "generated-living-960.avif",
+      "dimensions": [
+        960,
+        540
+      ],
+      "bytes": 69109,
+      "webpBytes": 120910,
+      "sha256": "8c1c0463cedab5af748dffa3644482b60352f5f1e5527880dbd8fd4eae1a4034"
+    },
+    {
+      "file": "generated-living.avif",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "bytes": 156490,
+      "webpBytes": 280890,
+      "sha256": "7c5af9b2bec2dd4968ed7c6dba5e671eff8645a2ef618fd75c55af07b97cdfbe"
+    }
+  ]
+}
