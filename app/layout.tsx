@@ -1,12 +1,18 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Manrope } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import "./warm-rebirth.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 
-const display = Cormorant_Garamond({ subsets: ["latin"], variable: "--font-display", weight: ["400", "500", "600"], style: ["normal", "italic"], display: "swap" });
-const sans = Manrope({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
+const display = localFont({
+  src: [
+    { path: "./fonts/cormorant-garamond-latin-normal.woff2", weight: "300 700", style: "normal" },
+    { path: "./fonts/cormorant-garamond-latin-italic.woff2", weight: "300 700", style: "italic" },
+  ],
+  variable: "--font-display", display: "swap", adjustFontFallback: "Times New Roman",
+});
+const sans = localFont({ src: "./fonts/manrope-latin-variable.woff2", weight: "200 800", variable: "--font-sans", display: "swap", adjustFontFallback: "Arial" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://wolco-rebirth.pages.dev"),

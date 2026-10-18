@@ -1,6 +1,6 @@
 # Web font licences
 
-Cormorant Garamond and Manrope are bundled by Next's font pipeline and served from this site's own origin. Both use the SIL Open Font License 1.1. The original notices and licence text are retained beside this file.
+Cormorant Garamond and Manrope are checked into `app/fonts` and bundled through `next/font/local`. Both use the SIL Open Font License 1.1. The original notices and licence text are retained beside this file. The three Latin variable-font binaries are byte-identical copies of those in the successful 18 October export: normal and italic Cormorant (300–700), and Manrope (200–800). No build-time Google font request is required.
 
 Sources retrieved 18 October 2026:
 

@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "include": [
+    "/media/generated-architectural-journey.mp4",
+    "/media/generated-exterior-film.mp4"
+  ],
+  "exclude": []
+}
