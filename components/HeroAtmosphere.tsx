@@ -23,9 +23,9 @@ export function HeroAtmosphere() {
     if (!element || pending) return;
     if (playing) { element.pause(); return; }
     setPending(true); setUnavailable(false);
-    if (!element.getAttribute("src")) element.src = "/media/generated-exterior-film.mp4";
+    if (!element.getAttribute("src")) element.src = "/media/wolco-courtyard-motion-v2.mp4";
     const timeout = window.setTimeout(() => { element.pause(); setPending(false); setUnavailable(true); }, 15000);
     try { await element.play(); } catch (error) { if (!(error instanceof DOMException && error.name === "AbortError")) setUnavailable(true); } finally { window.clearTimeout(timeout); setPending(false); }
   }
-  return <><video ref={video} className={`hero-film-video ${loaded ? "is-ready" : ""}`} muted loop playsInline preload="none" aria-hidden="true" onPlaying={() => { setLoaded(true); setPlaying(true); setPending(false); }} onPause={() => setPlaying(false)} onError={() => { setUnavailable(true); setPending(false); }} /><div className="hero-film-choice"><button className="hero-film-control" type="button" disabled={pending} onClick={toggle} aria-pressed={playing} aria-label={playing ? "Pause arrival film" : "Play arrival film"}><span aria-hidden="true">{playing ? "Ⅱ" : "▷"}</span>{pending ? "Loading the moment…" : playing ? "Pause arrival film" : "Play arrival film"}</button><span className="hero-film-status" role="status">{unavailable ? "The still visualisation is available." : "Generated architectural film"}</span></div></>;
+  return <><video ref={video} className={`hero-film-video ${loaded ? "is-ready" : ""}`} muted loop playsInline preload="none" aria-hidden="true" onPlaying={() => { setLoaded(true); setPlaying(true); setPending(false); }} onPause={() => setPlaying(false)} onError={() => { setUnavailable(true); setPending(false); }} /><div className="hero-film-choice"><button className="hero-film-control" type="button" disabled={pending} onClick={toggle} aria-pressed={playing} aria-label={playing ? "Pause arrival film" : "Play arrival film"}><span aria-hidden="true">{playing ? "Ⅱ" : "▷"}</span>{pending ? "Loading the moment…" : playing ? "Pause arrival film" : "Play arrival film"}</button><span className="hero-film-status" role="status">{unavailable ? "The still visualisation is available." : "Generated courtyard concept film"}</span></div></>;
 }

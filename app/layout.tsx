@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: { default: "WOLCO Homes — From line to life", template: "%s — WOLCO Homes" },
   description: "A considered approach to home. Explore WOLCO home designs, World of Wolco and a guided building journey in Melbourne.",
   robots: { index: false, follow: false },
-  openGraph: { title: "WOLCO Homes — From line to life", description: "A considered approach to home, from the first conversation to the way you live.", type: "website", locale: "en_AU", images: [{ url: "/media/generated-exterior-dusk.webp", width: 1600, height: 900, alt: "WOLCO architectural design visualisation" }] },
+  openGraph: { title: "WOLCO Homes — From line to life", description: "A considered approach to home, from the first conversation to the way you live.", type: "website", locale: "en_AU", images: [{ url: "/media/wolco-courtyard-arrival.webp", width: 1600, height: 900, alt: "Generated WOLCO brick courtyard-home visualisation" }] },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

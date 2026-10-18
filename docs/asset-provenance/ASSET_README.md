@@ -1,5 +1,7 @@
 # WOLCO demo visual assets
 
+> Superseded media history. The 19 October 2026 release uses the new dedicated courtyard and WOW concept family in `exclusive-v2/`, genuine supplied Cookes Road project footage, and a separate generated courtyard arrival film. None of the old `generated-*` public media below is included in the current build. See `../EXCLUSIVE_MEDIA_2026-10-19.md` and `exclusive-v2/` for current provenance. Original WOLCO logo artwork remains unchanged.
+
 Created for the user's two WOLCO demo refinements on 18 October 2026. This directory is a shared handoff; each website should copy only the assets it consumes into its own public directory. Retain provenance records in each repository's documentation.
 
 ## Original identity

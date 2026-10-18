@@ -25,12 +25,12 @@ npm audit --omit=dev
 - Responsive local WebP images in 640, 960 and 1600px versions.
 - Interactive collection and material studies.
 - Twelve native journey disclosures and contact FAQs.
-- A silent, explicitly controlled concept film.
+- A silent, explicitly controlled WOLCO project film, plus a separate generated courtyard arrival clip.
 - Local enquiry brief with validation, review, editing, download and an explicit email draft. The preview does not submit leads.
 
 ## Content and release boundary
 
-Architectural images are concept visualisations, not completed WOLCO builds or confirmed collection plans. Their purpose is explained at `/visual-studies/`. No private client shoot was imported.
+Architectural images are new WOLCO-exclusive concept visualisations, not completed WOLCO builds or confirmed collection plans. The primary film is a silent edit of genuine WOLCO-supplied Cookes Road project footage. The arrival clip is a separate generated concept. Their purpose is explained at `/visual-studies/` and recorded in `docs/asset-provenance/exclusive-v2/`.
 
 Staging remains `noindex,nofollow`. Final business/legal terms, media rights, catalogue specifications, the actual receiving lead system, migration redirects and client release approval remain distinct production requirements.
 

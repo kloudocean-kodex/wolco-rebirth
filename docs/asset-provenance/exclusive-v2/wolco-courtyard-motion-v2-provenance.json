@@ -1,0 +1,59 @@
+{
+  "classification": "Generated fictional courtyard-home concept film, not an actual WOLCO project.",
+  "provider": "Gemini video experience; visible mode label Flash-Lite at generation.",
+  "sourceConversation": "Generation session retained privately with the original download.",
+  "prompt": "Create one photoreal architectural film from the attached fictional WOLCO courtyard house concept. Landscape 16:9, about 8–10 seconds. Preserve the EXACT house design, muted russet long brick, low charcoal standing-seam roof, timber entry, native eucalyptus planting and warm late-afternoon lighting in the reference. One elegant slow stabilized dolly forward from the garden toward the sheltered timber entrance, with gentle real parallax, subtle leaves moving in a light breeze and physically consistent reflections. Camera stays outside; no cuts, no new buildings, no people, no vehicles, no text, no logos. Quiet cinematic Australian residential architecture, realistic lens and exposure, no dramatic artificial effects, no melting geometry or morphing. This is a fictional architectural mood study, not a completed WOLCO project. No music or speech.",
+  "reference": "originals/wolco-courtyard-arrival.png",
+  "sourceVerification": {
+    "full_decode_ok": true,
+    "duration_seconds": 10.03,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "fps": 24,
+    "decoded_frames": 240,
+    "has_audio": true,
+    "codec_line": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, smpte170m/bt709/iec61966-2-1, progressive), 1280x720, 8967 kb/s, 24 fps, 24 tbr, 90k tbn (default)",
+    "bytes": 12401005,
+    "sha256": "a169eab518771fe4c5f14d8d3b34a47607468d6d5061e4d973932c03112a8b41",
+    "faststart": true
+  },
+  "cleanup": {
+    "tool": "https://geminiwatermarkremover.io/video-runtime/video-preview",
+    "method": "User-requested browser-local watermark cleanup; retained unmodified original.",
+    "verification": {
+      "full_decode_ok": true,
+      "duration_seconds": 10.03,
+      "dimensions": [
+        1280,
+        720
+      ],
+      "fps": 24,
+      "decoded_frames": 240,
+      "has_audio": true,
+      "codec_line": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], 6751 kb/s, 24 fps, 24 tbr, 24 tbn (default)",
+      "bytes": 8604540,
+      "sha256": "7c17b6d8a7dd1d0286f65f6752c1a5adcca1d78537825ab7d76f065635b5b0a0",
+      "faststart": true
+    }
+  },
+  "outputVerification": {
+    "full_decode_ok": true,
+    "duration_seconds": 10,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "fps": 24,
+    "decoded_frames": 240,
+    "has_audio": false,
+    "codec_line": "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 1280x720 [SAR 1:1 DAR 16:9], 5414 kb/s, 24 fps, 24 tbr, 12288 tbn (default)",
+    "bytes": 6771541,
+    "sha256": "57ac685522c39bee4772f15572ffaa6fe92d0599fe461ed95038e78b047695d2",
+    "faststart": true
+  },
+  "output": "web/wolco-courtyard-motion-v2.mp4",
+  "poster": "web/wolco-courtyard-motion-v2-poster.webp",
+  "treatment": "Silent full-frame web export; no crop or aspect-ratio alteration."
+}

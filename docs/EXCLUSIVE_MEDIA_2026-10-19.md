@@ -1,0 +1,9 @@
+# WOLCO-exclusive media update — 19 October 2026
+
+The editorial Redline layout, typography, red line, original logo and interactions are preserved. Its architectural imagery now uses a dedicated WOLCO concept family: russet brick, charcoal roof planes, spotted-gum joinery, native planting and courtyard light. Seven new stills cover arrival, gathering, dwelling, material detail, and White, Cashmere and Espresso kitchen selections.
+
+The 21.6-second main film uses genuine WOLCO-supplied Cookes Road project footage: Arrival, Entry, Volume, Gather, Craft, Restore and Home. The seven continuous shots are slowed to 0.8 source speed and edited silently at 24fps with restrained grading and 0.45-second dissolves. The original WOLCO corner mark is retained. The separate 10-second generated courtyard arrival clip uses the requested browser-local mark cleanup; the untouched generated source is retained privately. Visible site captions distinguish concept imagery from the real project film.
+
+All earlier `generated-*` public media is removed from this build; retained Git history and private originals preserve recoverability. Original logo artwork remains unchanged. Source and derivative hashes, exact generation prompts and current film provenance are in `asset-provenance/exclusive-v2/`. Public records use relative retained-source references; raw Drive links and private workstation paths are omitted.
+
+Final production build, TypeScript, full lint and all 18 video range scenarios pass. Static export checks cover 16 HTML files and 67 assets with zero issues or missing CSS dependencies. The Git publication scan reports no credential findings. Current film bytes and hashes match the exported files. Exact local evidence is in `exclusive-media-local-checks.json` and `exclusive-media-static-checks.json`. Actual live desktop/mobile visual and interaction checks remain a release gate owned by the parent audit.
