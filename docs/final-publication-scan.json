@@ -1,6 +1,6 @@
 {
   "scope": "Git publishable files only; no secret values logged",
-  "textFiles": 109,
-  "files": 191,
+  "textFiles": 111,
+  "files": 166,
   "findings": []
 }

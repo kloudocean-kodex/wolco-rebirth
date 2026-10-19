@@ -15,16 +15,16 @@ export const collections:Collection[]=[
  {slug:"simplex",name:"Simplex",eyebrow:"Intentional living",headline:"Beautifully resolved.",description:"Thoughtful everyday living, with an emphasis on purposeful space and an uncomplicated sense of home.",image:"/media/wolco-courtyard-gather.webp",imageCredit:"Concept inspiration / Design visualisation",media:"wolco-courtyard-gather",alt:"Concept inspiration: a courtyard kitchen with timber cabinetry and a squared pale stone island, created as a design visualisation"}
 ];
 export const preconstruction=[
-  {title:"Request your detailed proposal",subtitle:"Start with a clear conversation.",detail:"Meet with your New Home Consultant at WOW Studio to discuss your home and request a detailed proposal.",who:"New Home Consultant · WOW Studio"},
-  {title:"Accept your proposal",subtitle:"Confirm your next step.",detail:"Review and accept the proposal with your acceptance fee.",who:"New Home Consultant · WOW Studio"},
-  {title:"New home appointment",subtitle:"Shape your vision.",detail:"Meet your New Home Consultant at WOW Studio for your new home appointment.",who:"New Home Consultant · WOW Studio"},
-  {title:"Walk through & external open studio",subtitle:"Explore the exterior direction.",detail:"Walk through the external selections with an Interior Design Consultant.",who:"Interior Design Consultant · WOW Studio"},
-  {title:"Plan presentation appointment",subtitle:"See the plan come together.",detail:"Attend the plan presentation appointment with your Plan Presenter Consultant.",who:"Plan Presenter Consultant · WOW Studio"},
-  {title:"HIA building agreement",subtitle:"Set out the agreement.",detail:"Review the building agreement with your Project Coordinator.",who:"Project Coordinator · WOW Studio"},
-  {title:"External selections & internal open studio",subtitle:"Discover the possibilities.",detail:"Return to WOW Studio for external selections and the internal open studio appointment.",who:"New Home Consultant · WOW Studio"},
-  {title:"Internal selections appointment",subtitle:"Make it your own.",detail:"Explore and confirm internal selections with your New Home Consultant.",who:"New Home Consultant · WOW Studio"},
-  {title:"Developer & building authority approvals",subtitle:"Navigate approvals.",detail:"The approvals team lodges applicable developer and building-authority approval requests on your behalf.",who:"Approvals team"},
-  {title:"Electrical selections appointment",subtitle:"Light the way.",detail:"Meet your Lighting & Electrical Design Consultant for electrical selections.",who:"Lighting & Electrical Design Consultant"},
-  {title:"Finance approval & authority to commence",subtitle:"Ready the next milestone.",detail:"Provide the required finance approval and Authority to Commence Construction (ACC), where applicable, so construction can proceed.",who:"Customer + approvals team"},
-  {title:"Construction commences",subtitle:"From line to life.",detail:"With the necessary requirements met, the project moves into construction.",who:"WOLCO construction team"},
+  {title:"New Home Selection",subtitle:"Pre-site / choose a direction.",detail:"Explore floor plans, facade options and possible customisations with the WOLCO team.",who:"Published guide · pre-site"},
+  {title:"Prelims Documentation",subtitle:"Pre-site / review the early documents.",detail:"Review preliminary plans and the documents that take your home one step closer.",who:"Published guide · pre-site"},
+  {title:"Contract Review",subtitle:"Pre-site / understand the agreement.",detail:"The guide describes building-contract review and signing as the next point in the journey.",who:"Published guide · pre-site"},
+  {title:"Let’s Personalise",subtitle:"Pre-site / bring selections together.",detail:"Consider interior and exterior colour selections, and keep your selection record for reference.",who:"Published guide · pre-site"},
+  {title:"Permits",subtitle:"Pre-site / prepare for approvals.",detail:"Once documentation is finalised, permit approvals move into the next stage for the project.",who:"Published guide · pre-site"},
+  {title:"Building Supervisor Meeting",subtitle:"On site / establish the connection.",detail:"Meet the building supervisor before construction and understand how project updates will be shared.",who:"Published guide · on site"},
+  {title:"Base Stage",subtitle:"On site / prepare the block.",detail:"The published guide describes preparation, excavation, underground connections and a slab inspection at this stage.",who:"Published guide · on site"},
+  {title:"Frame Stage",subtitle:"On site / the structure takes shape.",detail:"The guide places the frame stage here, with its stated inspection before the next phase.",who:"Published guide · on site"},
+  {title:"Lockup Stage",subtitle:"On site / enclose the home.",detail:"The guide describes completed brickwork, roofing, windows and temporary external doors at lockup.",who:"Published guide · on site"},
+  {title:"Fixings Stage",subtitle:"On site / finish the details.",detail:"The published guide describes the installation of skirting, cabinetry and cupboards, with painting beginning.",who:"Published guide · on site"},
+  {title:"Final Stage",subtitle:"On site / prepare for handover.",detail:"The guide sets out practical-completion review and agreement-specific installations before the handover date.",who:"Published guide · on site"},
+  {title:"Handover",subtitle:"On site / receive your home.",detail:"The published journey concludes its on-site stages with handover of the finished home.",who:"Published guide · on site"},
 ];

@@ -34,7 +34,7 @@ export function SiteHeader() {
   }
   return <>
     <header className="site-header">
-      <Link className="brand" href="/" aria-label="WOLCO Homes — home"><Image src="/brand/wolco-original-logo.webp" width={606} height={286} alt="WOLCO Homes" priority unoptimized /></Link>
+      <Link className="brand" href="/" aria-label="WOLCO Homes — home"><Image src="/brand/wolco-original-colour-logo-transparent.png" width={606} height={286} alt="WOLCO Homes" priority unoptimized /></Link>
       <nav className="desktop-nav" aria-label="Primary navigation">{[["Home designs", "/home-designs/"], ["Our approach", "/about/"], ["WOW Studio", "/world-of-wolco/"]].map(([label, href]) => <Link key={href} href={href} aria-current={isCurrentPage(href) ? "page" : undefined}>{label}</Link>)}</nav>
       <div className="header-actions"><Link href="/contact/" className="header-contact">Let&apos;s talk <span aria-hidden="true">↗</span></Link><button ref={opener} className="menu-trigger" type="button" aria-label="Open navigation menu" aria-haspopup="dialog" aria-controls="site-menu" aria-expanded={open} onClick={() => { if (!dialog.current) return; dialog.current.showModal(); setOpen(true); document.body.style.overflow = "hidden"; }}><span>Menu</span><i aria-hidden="true"><b /><b /></i></button></div>
     </header>

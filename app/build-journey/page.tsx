@@ -1,6 +1,6 @@
 import type {Metadata} from "next";
 import {BuilderPage} from "@/components/BuilderPage";
 import {StepsJourney} from "@/components/StepsJourney";
-export const metadata:Metadata={title:"12 Steps to Start Building",description:"Understand WOLCO's 12 pre-construction steps, from your detailed proposal and WOW Studio selections to construction commencement."};
-export default function Page(){return <BuilderPage number="04" eyebrow="THE ROAD TO YOUR NEW HOME" title="A clear path." italic="A considered beginning." description="From the first proposal to the moment construction begins. Explore the twelve steps in WOLCO's pre-construction guide, with space to understand each conversation and appointment along the way.">
- <section className="steps-page"><StepsJourney/></section></BuilderPage>}
+export const metadata:Metadata={title:"Journey From Here",description:"Explore WOLCO's published Journey From Here guide: five pre-site steps, seven on-site stages and a post-site aftercare guide."};
+export default function Page(){return <BuilderPage number="04" eyebrow="JOURNEY FROM HERE" title="A clear path." italic="From selection to handover." description="WOLCO's published guide sets out five pre-site steps and seven on-site stages through handover. Open each stage to understand the published guide; your agreement and project documents confirm what applies to your home.">
+ <section className="steps-page"><StepsJourney/><section className="steps-disclaimer" aria-labelledby="aftercare-title"><span className="micro">POST-SITE / JOURNEY FROM HERE</span><h2 className="step-title" id="aftercare-title">Aftercare, documented.</h2><p>The published guide also describes a post-site sequence of maintenance inspection, agreed works and completion of works. Current arrangements, scope and timing are confirmed in your agreement and project documents.</p></section></section></BuilderPage>}
